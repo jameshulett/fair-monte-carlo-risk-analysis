@@ -20,17 +20,17 @@ pip3 install -r requirements.txt
 ```
 
 Or if that doesn't work:
-```bash
 Try creating a virtual environment:
 ```bash
 python3 -m venv venv
 source venv/bin/activate  # Mac/Linux
+```
 # or
+```bash
 venv\Scripts\activate     # Windows
-
+```
+```bash
 pip install -r requirements.txt
-python3 fair_monte_carlo.py
-
 ```
 
 ### 3. Run the example
