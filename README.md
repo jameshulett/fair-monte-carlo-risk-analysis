@@ -42,6 +42,29 @@ streamlit run fair_dashboard.py
 
 The dashboard will automatically open in your browser at `http://localhost:8501`
 
+### Running with Docker
+
+Alternatively, you can run the application in a Docker container.
+
+**Using Docker Compose (Recommended):**
+
+```bash
+# Build and run the container in detached mode
+docker-compose up -d --build
+```
+
+**Using Docker:**
+
+```bash
+# 1. Build the Docker image
+docker build -t fair-risk-dashboard .
+
+# 2. Run the Docker container
+docker run -p 8501:8501 fair-risk-dashboard
+```
+
+The dashboard will be available at `http://localhost:8501`.
+
 ### First Use
 
 1. Load a preset scenario (e.g., "Ransomware Attack")

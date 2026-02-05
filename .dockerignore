@@ -1,0 +1,34 @@
+# Git
+.git
+.gitignore
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+
+# Docker
+Dockerfile
+.dockerignore
+
+# Documentation
+README.md
+CHANGELOG.md
+CONTRIBUTING.md
+custom_scenario_template.py
+Dashboard_Quick_Start.md
+DATA_FLOW_DIAGRAM.md
+FAIR_Monte_Carlo_Guide.md
+FAIR_Parameter_Reference.md
+STATISTICS_FAQ.md
+STATISTICS_QUICK_REFERENCE.md
+Tool_Comparison_Guide.md
+UPDATING_STATISTICS_GUIDE.md
+docs/
+ISSUE_TEMPLATE/
+
+# Logs
+*.log
