@@ -116,8 +116,8 @@ class FAIRMonteCarloSimulation:
         -----------
         tef_dist: Distribution for Threat Event Frequency (events per year)
         vuln_prob: Probability of vulnerability (0-1) - Contact Frequency × Probability of Action × Vulnerability
-        primary_loss_dist: Distribution for Primary Loss Magnitude (€)
-        secondary_loss_dist: Distribution for Secondary Loss Magnitude (€)
+        primary_loss_dist: Distribution for Primary Loss Magnitude ($)
+        secondary_loss_dist: Distribution for Secondary Loss Magnitude ($)
         secondary_loss_prob: Probability that secondary losses occur (0-1)
         
         Returns:
@@ -201,7 +201,7 @@ class FAIRMonteCarloSimulation:
         
         return stats
     
-    def print_results(self, stats: Dict, currency: str = "€"):
+    def print_results(self, stats: Dict, currency: str = "$"):
         """Print formatted simulation results"""
         print("\n" + "="*60)
         print("FAIR MONTE CARLO SIMULATION RESULTS")
@@ -228,7 +228,7 @@ class FAIRMonteCarloSimulation:
         
         print("\n" + "="*60 + "\n")
     
-    def plot_results(self, stats: Dict, currency: str = "€", save_path: str = None):
+    def plot_results(self, stats: Dict, currency: str = "$", save_path: str = None):
         """Generate visualization of simulation results"""
         if self.results is None:
             raise ValueError("No simulation results available. Run simulation first.")
@@ -377,8 +377,8 @@ def example_ransomware_scenario():
     )
     
     # Print and visualize results
-    sim.print_results(stats, currency="€")
-    sim.plot_results(stats, currency="€", save_path="ransomware_risk_analysis.png")
+    sim.print_results(stats, currency="$")
+    sim.plot_results(stats, currency="$", save_path="ransomware_risk_analysis.png")
     sim.export_results(stats, "Ransomware Attack", "ransomware_simulation_results.csv")
 
 
@@ -412,6 +412,6 @@ stats = sim.run_simulation(
 )
 
 # View results
-sim.print_results(stats, currency="€")
-sim.plot_results(stats, currency="€")
+sim.print_results(stats, currency="$")
+sim.plot_results(stats, currency="$")
     """)

@@ -54,28 +54,28 @@ thresholds is MODERATE RISK."
 **6. Zero-Day Exploit** (New)
 - Very low frequency (5-75/year) but extreme impact
 - Contact: 20%, Action: 50%, Vulnerability: 50%
-- Primary: €30K-€500K, Secondary: €50K-€800K
+- Primary: $30K-$500K, Secondary: $50K-$800K
 - High secondary probability (60%)
 - **Use Case:** High-value targets, APT concerns, critical infrastructure
 
 **7. Physical Theft of Device** (New)
 - Low-moderate frequency (10-200/year), low impact
 - Contact: 80%, Action: 10%, Vulnerability: 15%
-- Primary: €1K-€15K, Secondary: €5K-€150K
+- Primary: $1K-$15K, Secondary: $5K-$150K
 - Low secondary probability (30% - only if unencrypted)
 - **Use Case:** Mobile workforce, laptop security, MDM evaluation
 
 **8. Critical System Outage** (New)
 - Very low frequency (1-10/year), high impact
 - Contact: 100%, Action: 100%, Vulnerability: 80%
-- Primary: €15K-€300K, Secondary: €10K-€250K
+- Primary: $15K-$300K, Secondary: $10K-$250K
 - Moderate secondary probability (50%)
 - **Use Case:** HA/DR planning, downtime cost calculation, SLA impact
 
 **9. Supply Chain Compromise** (New)
 - Very low frequency (2-30/year), extreme impact
 - Contact: 70%, Action: 20%, Vulnerability: 25%
-- Primary: €25K-€600K, Secondary: €50K-€1M
+- Primary: $25K-$600K, Secondary: $50K-$1M
 - Very high secondary probability (75%)
 - **Use Case:** Vendor risk assessment, software supply chain, cascading impacts
 
@@ -143,10 +143,10 @@ Risk Levels (as % of annual revenue):
 - 🟡 Moderate Risk: 0.5% - 1.0%
 - 🔴 High Risk: > 1.0%
 
-For your organization (Revenue: €5,000,000):
-- 🟢 Low Risk: < €25,000
-- 🟡 Moderate Risk: €25,000 - €50,000
-- 🔴 High Risk: > €50,000
+For your organization (Revenue: $5,000,000):
+- 🟢 Low Risk: < $25,000
+- 🟡 Moderate Risk: $25,000 - $50,000
+- 🔴 High Risk: > $50,000
 ```
 
 ---
@@ -159,7 +159,7 @@ For your organization (Revenue: €5,000,000):
 - Low: 0.2%, High: 0.5%
 
 **Result:**
-- ALE: €30K (0.6% of €5M revenue)
+- ALE: $30K (0.6% of $5M revenue)
 - Assessment: 🔴 HIGH RISK (exceeds 0.5%)
 - Action: Immediate risk treatment required
 
@@ -169,7 +169,7 @@ For your organization (Revenue: €5,000,000):
 - Low: 1.0%, High: 2.0%
 
 **Result:**
-- ALE: €30K (0.6% of €5M revenue)
+- ALE: $30K (0.6% of $5M revenue)
 - Assessment: 🟢 LOW RISK (below 1.0%)
 - Action: Risk acceptable, minimal controls needed
 
@@ -572,7 +572,7 @@ New: "...This is INTERNAL - based on YOUR regulatory environment and
 🏢 Vulnerability: 30%
    ↓ (You can control this - better security controls)
    
-🏢 Loss Magnitude: €100K
+🏢 Loss Magnitude: $100K
    ↓ (You can reduce this - backups, resilience, insurance)
 ```
 

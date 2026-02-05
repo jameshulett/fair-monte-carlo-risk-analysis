@@ -33,7 +33,7 @@ def run_custom_scenario():
     print(f"\n{'='*70}")
     print(f"FAIR RISK ANALYSIS FOR: {CLIENT_NAME}")
     print(f"Scenario: {RISK_SCENARIO_NAME}")
-    print(f"Industry: {INDUSTRY} | Size: {COMPANY_SIZE} | Revenue: €{ANNUAL_REVENUE:,}")
+    print(f"Industry: {INDUSTRY} | Size: {COMPANY_SIZE} | Revenue: ${ANNUAL_REVENUE:,}")
     print(f"Regulatory Context: {REGULATORY_FRAMEWORK}")
     print(f"{'='*70}\n")
     
@@ -95,12 +95,12 @@ def run_custom_scenario():
     # Include: Incident response, forensics, recovery, downtime, ransom
     
     # Cost components to consider:
-    # - Incident response team: €10,000-50,000
-    # - Digital forensics: €5,000-30,000
-    # - System recovery/rebuild: €10,000-100,000
+    # - Incident response team: $10,000-50,000
+    # - Digital forensics: $5,000-30,000
+    # - System recovery/rebuild: $10,000-100,000
     # - Downtime costs: (Revenue/day × days down)
-    # - Data recovery: €5,000-50,000
-    # - Legal/PR: €5,000-100,000
+    # - Data recovery: $5,000-50,000
+    # - Legal/PR: $5,000-100,000
     
     primary_min = 25_000    # Minimum direct costs
     primary_mode = 80_000   # Typical direct costs
@@ -114,9 +114,9 @@ def run_custom_scenario():
     )
     
     print(f"💰 Primary Loss (Direct Costs)")
-    print(f"   Min: €{primary_min:,}")
-    print(f"   Mode: €{primary_mode:,}")
-    print(f"   Max: €{primary_max:,}\n")
+    print(f"   Min: ${primary_min:,}")
+    print(f"   Mode: ${primary_mode:,}")
+    print(f"   Max: ${primary_max:,}\n")
     
     # =================================================================
     # SECONDARY LOSS MAGNITUDE
@@ -125,10 +125,10 @@ def run_custom_scenario():
     # Include: Regulatory fines, reputation damage, customer churn, legal
     
     # Cost components to consider:
-    # - GDPR fines: Up to 4% annual revenue (€200k for €5M revenue)
+    # - GDPR fines: Up to 4% annual revenue ($200k for $5M revenue)
     # - Customer churn: (# customers lost × customer LTV)
     # - Reputation damage: Lost deals, delayed sales
-    # - Legal costs: €10,000-200,000
+    # - Legal costs: $10,000-200,000
     # - Insurance premium increases
     # - Competitive disadvantage
     
@@ -148,9 +148,9 @@ def run_custom_scenario():
     )
     
     print(f"📉 Secondary Loss (Indirect Costs)")
-    print(f"   Min: €{secondary_min:,}")
-    print(f"   Mode: €{secondary_mode:,}")
-    print(f"   Max: €{secondary_max:,}")
+    print(f"   Min: ${secondary_min:,}")
+    print(f"   Mode: ${secondary_mode:,}")
+    print(f"   Max: ${secondary_max:,}")
     print(f"   Probability of occurrence: {secondary_probability*100:.0f}%\n")
     
     # =================================================================
@@ -171,14 +171,14 @@ def run_custom_scenario():
     # =================================================================
     # DISPLAY AND SAVE RESULTS
     # =================================================================
-    sim.print_results(stats, currency="€")
+    sim.print_results(stats, currency="$")
     
     # Calculate as percentage of revenue
     ale_pct_revenue = (stats['ale_mean'] / ANNUAL_REVENUE) * 100
     ale_95_pct_revenue = (stats['percentiles']['95th'] / ANNUAL_REVENUE) * 100
     
     print(f"📊 BUSINESS CONTEXT")
-    print(f"Annual Revenue: €{ANNUAL_REVENUE:,}")
+    print(f"Annual Revenue: ${ANNUAL_REVENUE:,}")
     print(f"Mean ALE as % of revenue: {ale_pct_revenue:.2f}%")
     print(f"95th percentile as % of revenue: {ale_95_pct_revenue:.2f}%\n")
     
@@ -202,7 +202,7 @@ def run_custom_scenario():
     try:
         sim.plot_results(
             stats,
-            currency="€",
+            currency="$",
             save_path=f"{filename_base}_analysis.png"
         )
         print(f"✅ Plot saved: {filename_base}_analysis.png\n")
@@ -236,40 +236,40 @@ def run_custom_scenario():
     print(f"2️⃣  REDUCE THE RISK")
     print(f"   Option A: Email Security Gateway + User Training")
     print(f"   - Reduce vulnerability from {total_vulnerability*100:.2f}% to ~0.05%")
-    print(f"   - Estimated annual cost: €15,000-25,000")
-    print(f"   - Estimated ALE reduction: ~75% (€{stats['ale_mean']*0.75:,.0f})")
-    print(f"   - Net benefit: €{(stats['ale_mean']*0.75 - 20000):,.0f}/year")
+    print(f"   - Estimated annual cost: $15,000-25,000")
+    print(f"   - Estimated ALE reduction: ~75% (${stats['ale_mean']*0.75:,.0f})")
+    print(f"   - Net benefit: ${(stats['ale_mean']*0.75 - 20000):,.0f}/year")
     print(f"   - ROSI: {((stats['ale_mean']*0.75 - 20000)/20000)*100:.0f}%\n")
     
     print(f"   Option B: EDR/MDR + Enhanced Detection")
     print(f"   - Reduce loss magnitude by detecting breaches faster")
-    print(f"   - Estimated annual cost: €30,000-50,000")
-    print(f"   - Estimated ALE reduction: ~60% (€{stats['ale_mean']*0.60:,.0f})")
-    print(f"   - Net benefit: €{(stats['ale_mean']*0.60 - 40000):,.0f}/year")
+    print(f"   - Estimated annual cost: $30,000-50,000")
+    print(f"   - Estimated ALE reduction: ~60% (${stats['ale_mean']*0.60:,.0f})")
+    print(f"   - Net benefit: ${(stats['ale_mean']*0.60 - 40000):,.0f}/year")
     print(f"   - ROSI: {((stats['ale_mean']*0.60 - 40000)/40000)*100:.0f}%\n")
     
     print(f"3️⃣  TRANSFER THE RISK")
     print(f"   - Cyber insurance coverage")
-    print(f"   - Recommended coverage: €{stats['percentiles']['95th']:,.0f} (95th percentile)")
-    print(f"   - Estimated premium: €{stats['percentiles']['95th']*0.03:,.0f}-{stats['percentiles']['95th']*0.05:,.0f}/year (3-5% of coverage)")
-    print(f"   - Recommended deductible: €{stats['ale_median']:,.0f} (median ALE)\n")
+    print(f"   - Recommended coverage: ${stats['percentiles']['95th']:,.0f} (95th percentile)")
+    print(f"   - Estimated premium: ${stats['percentiles']['95th']*0.03:,.0f}-{stats['percentiles']['95th']*0.05:,.0f}/year (3-5% of coverage)")
+    print(f"   - Recommended deductible: ${stats['ale_median']:,.0f} (median ALE)\n")
     
     print(f"4️⃣  ACCEPT THE RISK")
     print(f"   - Acknowledge and monitor risk")
     print(f"   - Appropriate if ALE < 0.5% of revenue")
     print(f"   - Current: {ale_pct_revenue:.2f}% of revenue")
-    print(f"   - Reserve fund recommendation: €{stats['percentiles']['90th']:,.0f} (90th percentile)\n")
+    print(f"   - Reserve fund recommendation: ${stats['percentiles']['90th']:,.0f} (90th percentile)\n")
     
     print(f"{'='*70}\n")
     
     # Create summary for client presentation
     print(f"📋 EXECUTIVE SUMMARY (for client deck):")
     print(f"""
-The organization faces an estimated annual loss expectancy of €{stats['ale_mean']:,.0f} 
+The organization faces an estimated annual loss expectancy of ${stats['ale_mean']:,.0f} 
 from {RISK_SCENARIO_NAME}. This represents {ale_pct_revenue:.2f}% of annual revenue.
 
 There is a {stats['probability_of_loss']*100:.0f}% probability of experiencing at least 
-one incident per year. In 5% of scenarios, annual losses could exceed €{stats['percentiles']['95th']:,.0f}.
+one incident per year. In 5% of scenarios, annual losses could exceed ${stats['percentiles']['95th']:,.0f}.
 
 Recommended actions: [Choose most appropriate treatment option(s) above]
 Implementation timeline: [Define based on risk urgency]

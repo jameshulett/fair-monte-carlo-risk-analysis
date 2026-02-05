@@ -37,8 +37,8 @@ Malicious software that encrypts files and demands ransom payment. One of the mo
 - **Vulnerability:** 35% (depends on patching, backups, awareness)
 
 **Loss Profile:**
-- **Primary Loss:** €20K - €350K (ransom, recovery, downtime)
-- **Secondary Loss:** €10K - €200K (reputation, legal, compliance)
+- **Primary Loss:** $20K - $350K (ransom, recovery, downtime)
+- **Secondary Loss:** $10K - $200K (reputation, legal, compliance)
 - **Secondary Probability:** 35%
 
 **Key Factors:**
@@ -71,8 +71,8 @@ Unauthorized access to personal data with regulatory compliance implications, pa
 - **Vulnerability:** 25% (depends on access controls, DLP)
 
 **Loss Profile:**
-- **Primary Loss:** €15K - €250K (notification, forensics, remediation)
-- **Secondary Loss:** €20K - €400K (GDPR fines, lawsuits, churn)
+- **Primary Loss:** $15K - $250K (notification, forensics, remediation)
+- **Secondary Loss:** $20K - $400K (GDPR fines, lawsuits, churn)
 - **Secondary Probability:** 50%
 
 **Key Factors:**
@@ -106,8 +106,8 @@ Social engineering attack where attackers impersonate executives or vendors to t
 - **Vulnerability:** 30% (depends on awareness training, controls)
 
 **Loss Profile:**
-- **Primary Loss:** €8K - €200K (wire transfers, direct theft)
-- **Secondary Loss:** €3K - €75K (reputation, remediation)
+- **Primary Loss:** $8K - $200K (wire transfers, direct theft)
+- **Secondary Loss:** $3K - $75K (reputation, remediation)
 - **Secondary Probability:** 25%
 
 **Key Factors:**
@@ -141,8 +141,8 @@ Distributed Denial of Service attack that floods systems with traffic, causing s
 - **Vulnerability:** 100% (always exposed if online)
 
 **Loss Profile:**
-- **Primary Loss:** €5K - €120K (downtime, mitigation costs)
-- **Secondary Loss:** €3K - €80K (SLA penalties, customer churn)
+- **Primary Loss:** $5K - $120K (downtime, mitigation costs)
+- **Secondary Loss:** $3K - $80K (SLA penalties, customer churn)
 - **Secondary Probability:** 50%
 
 **Key Factors:**
@@ -176,8 +176,8 @@ Malicious or negligent actions by employees, contractors, or partners with legit
 - **Vulnerability:** 100% (insiders have legitimate access)
 
 **Loss Profile:**
-- **Primary Loss:** €15K - €400K (data theft, sabotage, fraud)
-- **Secondary Loss:** €20K - €600K (investigation, legal, reputation)
+- **Primary Loss:** $15K - $400K (data theft, sabotage, fraud)
+- **Secondary Loss:** $20K - $600K (investigation, legal, reputation)
 - **Secondary Probability:** 60%
 
 **Key Factors:**
@@ -211,8 +211,8 @@ Attack leveraging previously unknown software vulnerabilities before patches are
 - **Vulnerability:** 50% (depends on compensating controls)
 
 **Loss Profile:**
-- **Primary Loss:** €30K - €500K (breach, remediation, emergency response)
-- **Secondary Loss:** €50K - €800K (significant reputation damage)
+- **Primary Loss:** $30K - $500K (breach, remediation, emergency response)
+- **Secondary Loss:** $50K - $800K (significant reputation damage)
 - **Secondary Probability:** 60%
 
 **Key Factors:**
@@ -246,8 +246,8 @@ Theft or loss of laptops, mobile devices, or removable media containing sensitiv
 - **Vulnerability:** 15% (depends on encryption, remote wipe)
 
 **Loss Profile:**
-- **Primary Loss:** €1K - €15K (device replacement, data recovery)
-- **Secondary Loss:** €5K - €150K (data breach if unencrypted)
+- **Primary Loss:** $1K - $15K (device replacement, data recovery)
+- **Secondary Loss:** $5K - $150K (data breach if unencrypted)
 - **Secondary Probability:** 30%
 
 **Key Factors:**
@@ -281,8 +281,8 @@ Failure of critical infrastructure (servers, network, cloud services) causing bu
 - **Vulnerability:** 80% (depends on redundancy, DR)
 
 **Loss Profile:**
-- **Primary Loss:** €15K - €300K (downtime, recovery, lost revenue)
-- **Secondary Loss:** €10K - €250K (SLA penalties, customer impact)
+- **Primary Loss:** $15K - $300K (downtime, recovery, lost revenue)
+- **Secondary Loss:** $10K - $250K (SLA penalties, customer impact)
 - **Secondary Probability:** 50%
 
 **Key Factors:**
@@ -316,8 +316,8 @@ Attack targeting suppliers, vendors, or software providers to gain access to cus
 - **Vulnerability:** 25% (depends on vendor security requirements)
 
 **Loss Profile:**
-- **Primary Loss:** €25K - €600K (breach via vendor, remediation)
-- **Secondary Loss:** €50K - €1M (massive reputation damage, legal)
+- **Primary Loss:** $25K - $600K (breach via vendor, remediation)
+- **Secondary Loss:** $50K - $1M (massive reputation damage, legal)
 - **Secondary Probability:** 75%
 
 **Key Factors:**
@@ -391,9 +391,9 @@ Attack targeting suppliers, vendors, or software providers to gain access to cus
 3. Ransomware (100-1,000/year)
 
 **Highest Impact:**
-1. Supply Chain (€75K-€1.6M total)
-2. Zero-Day (€80K-€1.3M total)
-3. Insider Threat (€35K-€1M total)
+1. Supply Chain ($75K-$1.6M total)
+2. Zero-Day ($80K-$1.3M total)
+3. Insider Threat ($35K-$1M total)
 
 **Highest Secondary Probability:**
 1. Supply Chain (75%)
@@ -445,10 +445,10 @@ Attack targeting suppliers, vendors, or software providers to gain access to cus
 Run multiple scenarios to understand cumulative risk:
 
 **Example: Technology Company**
-1. Run Data Breach scenario → €150K ALE
-2. Run DDoS scenario → €75K ALE
-3. Run Supply Chain scenario → €200K ALE
-4. **Total portfolio risk:** €425K ALE
+1. Run Data Breach scenario → $150K ALE
+2. Run DDoS scenario → $75K ALE
+3. Run Supply Chain scenario → $200K ALE
+4. **Total portfolio risk:** $425K ALE
 
 **Portfolio View:**
 - Prioritize highest risks first
@@ -467,15 +467,15 @@ Run multiple scenarios to understand cumulative risk:
 **Current State (No Backup):**
 - Scenario: Ransomware Attack
 - Vulnerability: 50%
-- ALE: €120K
+- ALE: $120K
 
 **With Investment (Immutable Backups):**
 - Vulnerability: 10% (can restore)
-- New ALE: €24K
-- Risk Reduction: €96K
+- New ALE: $24K
+- Risk Reduction: $96K
 
-**Control Cost:** €30K/year
-**Net Benefit:** €66K/year
+**Control Cost:** $30K/year
+**Net Benefit:** $66K/year
 **ROSI:** 220%
 
 **Decision:** Strong business case for investment

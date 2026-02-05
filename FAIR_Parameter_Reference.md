@@ -2,20 +2,20 @@
 
 ## Typical Parameter Ranges by Company Size
 
-### Micro Enterprise (1-9 employees, €0-2M revenue)
+### Micro Enterprise (1-9 employees, $0-2M revenue)
 - **Risk Appetite**: 0.3-0.8% of revenue
-- **Insurance Coverage**: €50k-250k
-- **Incident Response Budget**: €5k-20k
+- **Insurance Coverage**: $50k-250k
+- **Incident Response Budget**: $5k-20k
 
-### Small Business (10-49 employees, €2-10M revenue)
+### Small Business (10-49 employees, $2-10M revenue)
 - **Risk Appetite**: 0.4-1.0% of revenue
-- **Insurance Coverage**: €250k-1M
-- **Incident Response Budget**: €10k-50k
+- **Insurance Coverage**: $250k-1M
+- **Incident Response Budget**: $10k-50k
 
-### Medium Business (50-249 employees, €10-50M revenue)
+### Medium Business (50-249 employees, $10-50M revenue)
 - **Risk Appetite**: 0.3-0.8% of revenue
-- **Insurance Coverage**: €1M-5M
-- **Incident Response Budget**: €25k-150k
+- **Insurance Coverage**: $1M-5M
+- **Incident Response Budget**: $25k-150k
 
 ---
 
@@ -103,48 +103,48 @@
 ## Loss Magnitude: Primary Costs (Direct)
 
 ### Ransomware Incident
-| Company Size | Min (€) | Mode (€) | Max (€) | Components |
+| Company Size | Min ($) | Mode ($) | Max ($) | Components |
 |-------------|---------|----------|---------|------------|
 | Micro | 5,000 | 20,000 | 80,000 | Ransom, recovery, downtime |
 | Small | 15,000 | 60,000 | 250,000 | + IR team, forensics |
 | Medium | 50,000 | 200,000 | 1,000,000 | + full rebuild, extended downtime |
 
 **Breakdown:**
-- Ransom payment: €5k-500k (if paid; avg €70k for SMBs)
-- Incident response: €10k-100k
-- Digital forensics: €5k-50k
-- System recovery: €10k-200k
-- Data recovery: €5k-100k
-- Downtime: €1k-10k per day × days
+- Ransom payment: $5k-500k (if paid; avg $70k for SMBs)
+- Incident response: $10k-100k
+- Digital forensics: $5k-50k
+- System recovery: $10k-200k
+- Data recovery: $5k-100k
+- Downtime: $1k-10k per day × days
 
 ### Data Breach (GDPR)
-| Company Size | Min (€) | Mode (€) | Max (€) | Components |
+| Company Size | Min ($) | Mode ($) | Max ($) | Components |
 |-------------|---------|----------|---------|------------|
 | Micro | 3,000 | 15,000 | 60,000 | Notification, legal, basic IR |
 | Small | 10,000 | 50,000 | 200,000 | + forensics, credit monitoring |
 | Medium | 30,000 | 150,000 | 800,000 | + comprehensive response |
 
 **Breakdown:**
-- Incident investigation: €5k-80k
-- Legal fees: €5k-100k
-- Notification costs: €2k-50k
-- Credit monitoring: €10-30 per affected individual
-- PR/crisis management: €10k-100k
+- Incident investigation: $5k-80k
+- Legal fees: $5k-100k
+- Notification costs: $2k-50k
+- Credit monitoring: $10-30 per affected individual
+- PR/crisis management: $10k-100k
 
 ### Business Email Compromise (BEC)
-| Company Size | Min (€) | Mode (€) | Max (€) | Components |
+| Company Size | Min ($) | Mode ($) | Max ($) | Components |
 |-------------|---------|----------|---------|------------|
 | Micro | 3,000 | 15,000 | 80,000 | Wire transfer loss |
 | Small | 5,000 | 35,000 | 200,000 | Larger transfers |
 | Medium | 10,000 | 80,000 | 500,000 | High-value targets |
 
 **Breakdown:**
-- Wire transfer loss: €5k-500k (FBI IC3: avg €120k)
-- Recovery attempts: €2k-20k
-- Investigation: €3k-30k
+- Wire transfer loss: $5k-500k (FBI IC3: avg $120k)
+- Recovery attempts: $2k-20k
+- Investigation: $3k-30k
 
 ### DDoS Attack
-| Company Size | Min (€) | Mode (€) | Max (€) | Components |
+| Company Size | Min ($) | Mode ($) | Max ($) | Components |
 |-------------|---------|----------|---------|------------|
 | E-commerce | 2,000 | 15,000 | 100,000 | Lost revenue + mitigation |
 | SaaS | 3,000 | 20,000 | 150,000 | Customer impact + SLA |
@@ -152,12 +152,12 @@
 
 **Breakdown:**
 - Lost revenue: (Revenue per hour × hours down)
-- Mitigation service: €5k-50k per incident
-- Customer compensation: €1k-30k
-- Emergency response: €2k-20k
+- Mitigation service: $5k-50k per incident
+- Customer compensation: $1k-30k
+- Emergency response: $2k-20k
 
 ### Insider Threat/Data Theft
-| Company Size | Min (€) | Mode (€) | Max (€) | Components |
+| Company Size | Min ($) | Mode ($) | Max ($) | Components |
 |-------------|---------|----------|---------|------------|
 | Micro | 5,000 | 25,000 | 100,000 | Investigation, IP loss |
 | Small | 10,000 | 60,000 | 300,000 | + legal action |
@@ -169,30 +169,30 @@
 
 ### Regulatory Fines (EU)
 
-#### GDPR Fines (up to 4% annual revenue or €20M)
-| Severity | Micro (€2M rev) | Small (€10M rev) | Medium (€50M rev) |
+#### GDPR Fines (up to 4% annual revenue or $20M)
+| Severity | Micro ($2M rev) | Small ($10M rev) | Medium ($50M rev) |
 |----------|-----------------|------------------|-------------------|
-| Minor | €5,000 | €25,000 | €125,000 |
-| Moderate | €20,000 | €100,000 | €500,000 |
-| Severe | €50,000 | €250,000 | €1,250,000 |
+| Minor | $5,000 | $25,000 | $125,000 |
+| Moderate | $20,000 | $100,000 | $500,000 |
+| Severe | $50,000 | $250,000 | $1,250,000 |
 
 **Historical averages** (GDPR fine tracker):
-- SMBs: €10k-100k (majority under €50k)
+- SMBs: $10k-100k (majority under $50k)
 - First-time offenders: Lower end
 - Repeat/negligent: Upper end
 
 #### NIS2 Penalties
-- Essential entities: Up to €10M or 2% revenue
-- Important entities: Up to €7M or 1.4% revenue
+- Essential entities: Up to $10M or 2% revenue
+- Important entities: Up to $7M or 1.4% revenue
 
 ### Customer Churn
 | Industry | Churn Rate After Breach | Avg Customer LTV | Impact |
 |----------|------------------------|------------------|---------|
-| Financial Services | 15-30% | €5,000-20,000 | High |
-| Healthcare | 10-20% | €3,000-10,000 | Medium-High |
-| Retail | 5-15% | €500-2,000 | Medium |
-| B2B SaaS | 10-25% | €10,000-50,000 | Very High |
-| Professional Services | 5-15% | €5,000-30,000 | Medium |
+| Financial Services | 15-30% | $5,000-20,000 | High |
+| Healthcare | 10-20% | $3,000-10,000 | Medium-High |
+| Retail | 5-15% | $500-2,000 | Medium |
+| B2B SaaS | 10-25% | $10,000-50,000 | Very High |
+| Professional Services | 5-15% | $5,000-30,000 | Medium |
 
 **Calculation**: (Customer count × Churn rate × Customer LTV)
 
@@ -206,9 +206,9 @@
 ### Other Secondary Costs
 - Insurance premium increases: 10-50% for 3 years
 - Stock price impact (if public): 5-15% drop avg
-- Legal settlements: €10k-500k
+- Legal settlements: $10k-500k
 - Competitive disadvantage: 2-8% lost deals
-- Executive time: 100-500 hours @ €200-500/hr
+- Executive time: 100-500 hours @ $200-500/hr
 
 ### Probability of Secondary Losses
 
@@ -262,41 +262,41 @@
 - **Vulnerability Reduction**: 70-85%
 - **Loss Magnitude**: 0% (doesn't reduce impact)
 - **Overall Risk Reduction**: 70-85%
-- **Annual Cost**: €5k-25k for SMBs
+- **Annual Cost**: $5k-25k for SMBs
 
 ### Endpoint Detection & Response (EDR/MDR)
 - **TEF Reduction**: 0%
 - **Vulnerability Reduction**: 40-60%
 - **Loss Magnitude Reduction**: 30-50% (faster detection)
 - **Overall Risk Reduction**: 60-80%
-- **Annual Cost**: €15k-60k for SMBs
+- **Annual Cost**: $15k-60k for SMBs
 
 ### MFA (Multi-Factor Authentication)
 - **TEF Reduction**: 0%
 - **Vulnerability Reduction**: 80-95% (credential-based)
 - **Loss Magnitude**: 0%
 - **Overall Risk Reduction**: 80-95% for credential threats
-- **Annual Cost**: €3k-15k for SMBs
+- **Annual Cost**: $3k-15k for SMBs
 
 ### Backup & Recovery Solution
 - **TEF Reduction**: 0%
 - **Vulnerability Reduction**: 0%
 - **Loss Magnitude Reduction**: 60-80% (ransomware)
 - **Overall Risk Reduction**: 60-80% (ransomware only)
-- **Annual Cost**: €5k-30k for SMBs
+- **Annual Cost**: $5k-30k for SMBs
 
 ### Cyber Insurance
 - **Risk Reduction**: 0% (transfer only)
 - **Financial Impact**: Transfers 70-90% after deductible
 - **Annual Cost**: 2-5% of coverage amount
-- **Typical Coverage**: €500k-5M for SMBs
+- **Typical Coverage**: $500k-5M for SMBs
 
 ### Network Segmentation
 - **TEF Reduction**: 0%
 - **Vulnerability Reduction**: 20-40%
 - **Loss Magnitude Reduction**: 40-60% (limits spread)
 - **Overall Risk Reduction**: 50-75%
-- **Implementation Cost**: €20k-100k (one-time)
+- **Implementation Cost**: $20k-100k (one-time)
 
 ---
 
@@ -371,7 +371,7 @@ secondary_prob = 0.60
 - **Sophos Threat Report**: SMB-focused
 
 ### Loss Data
-- **IBM Cost of Data Breach**: Annual report (€4.88M avg in 2024, €165 per record)
+- **IBM Cost of Data Breach**: Annual report ($4.88M avg in 2024, $165 per record)
 - **Ponemon Cost Studies**: Various breach types
 - **NetDiligence Claims Database**: Cyber insurance claims
 - **Advisen Cyber Loss Database**: Historical losses
@@ -400,10 +400,10 @@ secondary_prob = 0.60
 
 | 95th Percentile | Insurance Coverage Recommendation |
 |-----------------|----------------------------------|
-| < €100k | Consider €250k-500k policy |
-| €100k - €500k | Get €500k-1M policy |
-| €500k - €1M | Get €1M-2M policy |
-| > €1M | Get €2M-5M policy |
+| < $100k | Consider $250k-500k policy |
+| $100k - $500k | Get $500k-1M policy |
+| $500k - $1M | Get $1M-2M policy |
+| > $1M | Get $2M-5M policy |
 
 ---
 

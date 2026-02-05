@@ -119,10 +119,10 @@ Download your results in multiple formats:
 5. Compare the two ALEs to show control effectiveness!
 
 **Example:**
-- Before: Vulnerability = 2% → Mean ALE = €600k
-- After: Vulnerability = 0.3% → Mean ALE = €90k
-- **Risk Reduction**: 85% (€510k savings)
-- **If control costs €50k/year → ROSI = 920%**
+- Before: Vulnerability = 2% → Mean ALE = $600k
+- After: Vulnerability = 0.3% → Mean ALE = $90k
+- **Risk Reduction**: 85% ($510k savings)
+- **If control costs $50k/year → ROSI = 920%**
 
 ## 🎨 Dashboard Sections Explained
 
@@ -161,8 +161,8 @@ Shows how often loss events occur. Helps prioritize prevention controls.
 2. **Run the baseline** to show current risk
 3. **Ask client**: "What if we reduce phishing clicks from 8% to 3%?"
 4. **Adjust the slider live** and re-run
-5. **Show the difference**: "That's €400k in reduced risk!"
-6. **Calculate ROSI**: "For a €30k investment in training"
+5. **Show the difference**: "That's $400k in reduced risk!"
+6. **Calculate ROSI**: "For a $30k investment in training"
 7. **Export the report** and send it to them after the meeting
 
 ### For Board Presentations
@@ -176,9 +176,9 @@ Shows how often loss events occur. Helps prioritize prevention controls.
 ### For Budget Justification
 
 1. Run **"current state"** scenario
-2. Show Mean ALE: "We're exposed to €X per year"
+2. Show Mean ALE: "We're exposed to $X per year"
 3. Adjust for **"with proposed controls"**
-4. Calculate savings: "This control reduces risk by €Y"
+4. Calculate savings: "This control reduces risk by $Y"
 5. Show ROSI: "That's a Z% return on investment"
 
 ## 🔧 Customization
@@ -300,7 +300,7 @@ streamlit run fair_dashboard.py
 
 # 3. In the sidebar:
 #    - Client Name: "TechCorp BV"
-#    - Annual Revenue: €8,000,000
+#    - Annual Revenue: $8,000,000
 #    - Industry: Technology
 #    - Preset: Ransomware Attack
 
@@ -310,13 +310,13 @@ streamlit run fair_dashboard.py
 #    - Click "🚀 Run Simulation"
 
 # 5. Review results:
-#    - Mean ALE: €620,000 (7.8% of revenue - HIGH RISK!)
-#    - 95th percentile: €1.3M
+#    - Mean ALE: $620,000 (7.8% of revenue - HIGH RISK!)
+#    - 95th percentile: $1.3M
 #    - Probability of incident: 99%
 
 # 6. Show what controls could do:
 #    - Set "Control Investment Analysis" to 75% reduction
-#    - Cost: €50,000
+#    - Cost: $50,000
 #    - ROSI: 830%! 
 
 # 7. Export:

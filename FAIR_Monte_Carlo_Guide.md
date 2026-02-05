@@ -54,7 +54,7 @@ tef = FAIRDistribution(
 # Define vulnerability (probability of success)
 vulnerability = 0.02  # 2% of attempts succeed
 
-# Define Primary Loss (direct costs in €)
+# Define Primary Loss (direct costs in $)
 primary_loss = FAIRDistribution(
     dist_type='lognormal',
     min_val=10000,
@@ -62,7 +62,7 @@ primary_loss = FAIRDistribution(
     max_val=200000
 )
 
-# Define Secondary Loss (indirect costs in €)
+# Define Secondary Loss (indirect costs in $)
 secondary_loss = FAIRDistribution(
     dist_type='lognormal',
     min_val=5000,
@@ -80,8 +80,8 @@ stats = sim.run_simulation(
 )
 
 # Display results
-sim.print_results(stats, currency="€")
-sim.plot_results(stats, currency="€", save_path="risk_analysis.png")
+sim.print_results(stats, currency="$")
+sim.plot_results(stats, currency="$", save_path="risk_analysis.png")
 sim.export_results(stats, "My Scenario", "results.csv")
 ```
 
@@ -239,20 +239,20 @@ Break down into components:
 ### Loss Magnitude
 
 **Primary Loss Components:**
-- Incident response: €10,000-50,000
-- Forensics: €5,000-30,000
-- System recovery: €5,000-100,000
+- Incident response: $10,000-50,000
+- Forensics: $5,000-30,000
+- System recovery: $5,000-100,000
 - Downtime: (Revenue per hour × hours down)
-- Data recovery: €10,000-200,000
+- Data recovery: $10,000-200,000
 
 **Secondary Loss Components:**
-- Regulatory fines: €0-500,000 (GDPR up to 4% revenue)
+- Regulatory fines: $0-500,000 (GDPR up to 4% revenue)
 - Customer churn: (Customer LTV × churn rate)
 - Reputation: Lost deals, delayed sales
-- Legal: €10,000-200,000
+- Legal: $10,000-200,000
 - Insurance premium increases
 
-**For SMBs (€1-10M revenue):**
+**For SMBs ($1-10M revenue):**
 - Use industry benchmarks
 - Scale to your company size
 - Consider your specific regulatory exposure
@@ -290,11 +290,11 @@ Break down into components:
 
 **Security Investment ROI:**
 ```
-If ALE = €500,000 and control costs €100,000/year
+If ALE = $500,000 and control costs $100,000/year
 ROSI = (ALE Reduction - Control Cost) / Control Cost
 
 If control reduces ALE by 50%:
-ROSI = (€250,000 - €100,000) / €100,000 = 150%
+ROSI = ($250,000 - $100,000) / $100,000 = 150%
 ```
 
 **Risk Acceptance:**

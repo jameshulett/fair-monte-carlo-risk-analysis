@@ -88,7 +88,7 @@ with st.sidebar:
         help="The name of the organization being assessed. Used for report generation and documentation."
     )
     annual_revenue = st.number_input(
-        "Annual Revenue (€)", 
+        "Annual Revenue ($)", 
         min_value=100000, 
         max_value=1000000000, 
         value=5000000, 
@@ -116,7 +116,7 @@ with st.sidebar:
     
     currency = st.selectbox(
         "Currency", 
-        ["€", "$", "£", "CHF"], 
+        ["$", "$", "£", "CHF"], 
         index=0,
         help="Currency symbol for displaying financial values in reports and visualizations."
     )

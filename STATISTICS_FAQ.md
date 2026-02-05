@@ -92,7 +92,7 @@ actual_tef = 8 / 3  # = 2.67 events/year
 
 **If you have cost data:**
 ```python
-# You had 2 incidents that cost €45k and €120k
+# You had 2 incidents that cost $45k and $120k
 
 "primary_min": 40000,   # Lower bound
 "primary_mode": 45000,  # Your smaller incident
@@ -129,9 +129,9 @@ The PERT distribution handles this by:
 
 **What this means:**
 - ✅ Accurate enough for investment decisions ($50k vs. $500k control)
-- ✅ Accurate enough for insurance coverage (€500k vs. €5M)
+- ✅ Accurate enough for insurance coverage ($500k vs. $5M)
 - ✅ Accurate enough for risk acceptance thresholds
-- ❌ Not accurate enough to budget to the nearest €1,000
+- ❌ Not accurate enough to budget to the nearest $1,000
 - ❌ Not accurate enough to predict specific incident dates
 
 **Why this is okay:**
@@ -162,15 +162,15 @@ Basic steps:
 
 ### Q9: How do I adjust for company size?
 
-**A:** The presets assume **small businesses (€2-10M revenue)**. Adjust using these multipliers:
+**A:** The presets assume **small businesses ($2-10M revenue)**. Adjust using these multipliers:
 
-**Micro (€0-2M revenue):**
+**Micro ($0-2M revenue):**
 - TEF: ×0.5 (less attractive target)
 - Vulnerability: ×1.2 (fewer controls)
 - Primary loss: ×0.6 (smaller scale)
 - Secondary loss: ×0.4 (smaller fines, less reputation impact)
 
-**Medium (€10-50M revenue):**
+**Medium ($10-50M revenue):**
 - TEF: ×1.5 (more attractive target)
 - Vulnerability: ×0.8 (more mature controls)
 - Primary loss: ×2.0 (larger scale)
@@ -200,7 +200,7 @@ Basic steps:
 **Create custom when:**
 - You have client-specific data
 - Unique industry (e.g., critical infrastructure)
-- High-stakes decision (>€500k investment)
+- High-stakes decision (>$500k investment)
 - Regulatory requirement for tailored assessment
 
 **Pro tip:** Start with preset, then customize as you learn more about the client.
@@ -334,18 +334,18 @@ This captures the **uncertainty in timing** that makes insurance valuable.
 **A:** Use the **mean ALE** for budget planning:
 
 **Example:**
-- Mean ALE: €450,000
+- Mean ALE: $450,000
 - Budget for controls: 10-20% of ALE
-- Budget range: €45,000-€90,000/year
+- Budget range: $45,000-$90,000/year
 
 **Rationale:**
-- If controls reduce risk by 50%, you save €225k
-- Spending €90k to save €225k = 150% ROSI
+- If controls reduce risk by 50%, you save $225k
+- Spending $90k to save $225k = 150% ROSI
 - This is the "risk-driven budget" approach
 
 **Compare to traditional:**
 - Traditional: "Industry average is 3-5% of IT budget"
-- Risk-driven: "We face €450k risk, so we invest proportionally"
+- Risk-driven: "We face $450k risk, so we invest proportionally"
 
 ---
 
@@ -372,7 +372,7 @@ This captures the **uncertainty in timing** that makes insurance valuable.
 - Conservative budgeting
 
 **Example conversation:**
-"In a typical year (median), we expect €300k in losses. On average (mean), it's €450k because of occasional severe incidents. There's a 5% chance (95th percentile) losses exceed €1.2M, which is why we need insurance."
+"In a typical year (median), we expect $300k in losses. On average (mean), it's $450k because of occasional severe incidents. There's a 5% chance (95th percentile) losses exceed $1.2M, which is why we need insurance."
 
 ---
 
@@ -383,20 +383,20 @@ This captures the **uncertainty in timing** that makes insurance valuable.
 **Step 1: Baseline (no control)**
 ```python
 vulnerability_before = 0.02  # 2%
-# Run simulation → Mean ALE: €600,000
+# Run simulation → Mean ALE: $600,000
 ```
 
 **Step 2: With Control A (Email security + training)**
 ```python
 vulnerability_after = 0.006  # 0.6% (70% reduction)
-control_cost = 25000  # €25k/year
-# Run simulation → Mean ALE: €180,000
+control_cost = 25000  # $25k/year
+# Run simulation → Mean ALE: $180,000
 ```
 
 **Step 3: Calculate ROSI**
 ```python
-ale_reduction = 600000 - 180000  # €420,000
-net_benefit = ale_reduction - control_cost  # €395,000
+ale_reduction = 600000 - 180000  # $420,000
+net_benefit = ale_reduction - control_cost  # $395,000
 rosi = net_benefit / control_cost  # 15.8 = 1,580%
 ```
 
@@ -449,7 +449,7 @@ We do the same with cyber risk:
 - Run 10,000 'what if' scenarios
 - Each scenario slightly different (varying attack frequency, costs)
 - Get a range of outcomes with probabilities
-- '80% of the time, losses are under €800k. But 5% of the time, they exceed €1.5M.'
+- '80% of the time, losses are under $800k. But 5% of the time, they exceed $1.5M.'
 
 This helps us plan for both typical and worst-case scenarios."
 
@@ -526,7 +526,7 @@ See CONTRIBUTING.md for detailed guidelines.
 **A:** Yes, the core tool will remain open source and free forever.
 
 **Why?**
-- Enterprise risk platforms cost €50k+
+- Enterprise risk platforms cost $50k+
 - SMBs deserve access to quantitative risk analysis
 - Community contributions improve the tool for everyone
 - Open source increases trust and transparency

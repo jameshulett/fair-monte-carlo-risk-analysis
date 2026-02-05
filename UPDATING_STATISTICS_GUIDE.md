@@ -19,12 +19,12 @@ This is where the **default preset scenarios** live. Each preset contains calibr
     "vuln_contact": 0.25,     # 25% of threats reach the target
     "vuln_action": 0.10,      # 10% result in user action
     "vuln_rate": 0.35,        # 35% succeed when acted upon
-    "primary_min": 20000,     # Minimum direct loss (€)
-    "primary_mode": 75000,    # Most likely direct loss (€)
-    "primary_max": 350000,    # Maximum direct loss (€)
-    "secondary_min": 10000,   # Minimum indirect loss (€)
-    "secondary_mode": 40000,  # Most likely indirect loss (€)
-    "secondary_max": 200000,  # Maximum indirect loss (€)
+    "primary_min": 20000,     # Minimum direct loss ($)
+    "primary_mode": 75000,    # Most likely direct loss ($)
+    "primary_max": 350000,    # Maximum direct loss ($)
+    "secondary_min": 10000,   # Minimum indirect loss ($)
+    "secondary_mode": 40000,  # Most likely indirect loss ($)
+    "secondary_max": 200000,  # Maximum indirect loss ($)
     "secondary_prob": 0.35    # 35% chance of secondary losses
 }
 ```
@@ -80,18 +80,18 @@ Contains a standalone example with inline comments explaining each parameter.
 ### Loss Magnitudes
 
 **Primary Losses** (Direct Costs):
-- **Incident Response**: €10k-50k (based on hourly rates × typical engagement)
+- **Incident Response**: $10k-50k (based on hourly rates × typical engagement)
 - **Downtime**: Revenue/hour × hours down (industry-specific)
-- **Recovery**: €5k-100k (system rebuild, data restoration)
-- **Legal/PR**: €5k-50k (SMB range)
+- **Recovery**: $5k-100k (system rebuild, data restoration)
+- **Legal/PR**: $5k-50k (SMB range)
 
 **Sources**:
-- IBM Cost of Data Breach 2024 (€4.88M average, scaled to SMB)
+- IBM Cost of Data Breach 2024 ($4.88M average, scaled to SMB)
 - Ponemon Institute studies
 - Coalition Cyber Insurance claims data
 
 **Secondary Losses** (Indirect Costs):
-- **GDPR Fines**: €10k-500k (GDPR Enforcement Tracker, actual SMB fines)
+- **GDPR Fines**: $10k-500k (GDPR Enforcement Tracker, actual SMB fines)
 - **Customer Churn**: Varies by industry (5-30% post-breach)
 - **Reputation**: Lost revenue based on public breach disclosure studies
 
@@ -438,7 +438,7 @@ Justification:
 
 Testing:
 - Ran simulation with new parameters
-- Mean ALE: €[amount] ([%] of €5M revenue)
+- Mean ALE: $[amount] ([%] of $5M revenue)
 - Results within expected range
 ```
 
@@ -500,7 +500,7 @@ Let's walk through updating ransomware statistics based on new 2025 data:
 streamlit run fair_dashboard.py
 # Select "Ransomware Attack"
 # Run simulation
-# Verify: Mean ALE changed from ~€460k to ~€540k
+# Verify: Mean ALE changed from ~$460k to ~$540k
 # Reason: More attempts (TEF ↑) offset by better defenses (Vuln ↓)
 ```
 

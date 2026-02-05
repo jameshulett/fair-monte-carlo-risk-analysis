@@ -167,9 +167,9 @@ In FAIR risk analysis, it's critical to understand which factors you can control
 - Reduce downtime through resilience
 
 **Example Values (vary by organization):**
-- Small business ransomware: €5K-50K
-- Enterprise data breach: €100K-1M
-- Critical infrastructure attack: €1M-10M+
+- Small business ransomware: $5K-50K
+- Enterprise data breach: $100K-1M
+- Critical infrastructure attack: $1M-10M+
 
 **Caption in UI:** "Direct costs when incident occurs - YOUR organization's costs"
 

@@ -15,12 +15,12 @@
     "vuln_contact": 0.25,     # ← HERE: Contact rate
     "vuln_action": 0.10,      # ← HERE: Action rate
     "vuln_rate": 0.35,        # ← HERE: Vulnerability rate
-    "primary_min": 20000,     # ← HERE: Min direct loss €
-    "primary_mode": 75000,    # ← HERE: Most likely direct loss €
-    "primary_max": 350000,    # ← HERE: Max direct loss €
-    "secondary_min": 10000,   # ← HERE: Min indirect loss €
-    "secondary_mode": 40000,  # ← HERE: Most likely indirect loss €
-    "secondary_max": 200000,  # ← HERE: Max indirect loss €
+    "primary_min": 20000,     # ← HERE: Min direct loss $
+    "primary_mode": 75000,    # ← HERE: Most likely direct loss $
+    "primary_max": 350000,    # ← HERE: Max direct loss $
+    "secondary_min": 10000,   # ← HERE: Min indirect loss $
+    "secondary_mode": 40000,  # ← HERE: Most likely indirect loss $
+    "secondary_max": 200000,  # ← HERE: Max indirect loss $
     "secondary_prob": 0.35    # ← HERE: Chance of indirect loss
 }
 ```
@@ -95,12 +95,12 @@ streamlit run fair_dashboard.py
 | `vuln_contact` | % reaching target | 0.25 (25%) | 0.10-0.80 |
 | `vuln_action` | % acted upon | 0.10 (10%) | 0.05-0.20 |
 | `vuln_rate` | % succeeding | 0.35 (35%) | 0.10-0.60 |
-| `primary_min` | Min direct cost € | 20,000 | 5k-50k |
-| `primary_mode` | Typical direct cost € | 75,000 | 20k-200k |
-| `primary_max` | Max direct cost € | 350,000 | 100k-1M |
-| `secondary_min` | Min indirect cost € | 10,000 | 0-50k |
-| `secondary_mode` | Typical indirect cost € | 40,000 | 10k-200k |
-| `secondary_max` | Max indirect cost € | 200,000 | 50k-1M |
+| `primary_min` | Min direct cost $ | 20,000 | 5k-50k |
+| `primary_mode` | Typical direct cost $ | 75,000 | 20k-200k |
+| `primary_max` | Max direct cost $ | 350,000 | 100k-1M |
+| `secondary_min` | Min indirect cost $ | 10,000 | 0-50k |
+| `secondary_mode` | Typical indirect cost $ | 40,000 | 10k-200k |
+| `secondary_max` | Max indirect cost $ | 200,000 | 50k-1M |
 | `secondary_prob` | Chance of indirect loss | 0.35 (35%) | 0.20-0.70 |
 
 ---

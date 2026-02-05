@@ -241,7 +241,7 @@ This checklist ensures all help text tooltips are working correctly and providin
 
 - [ ] **Tooltip Positioning:** Ensure tooltips don't go off-screen
 - [ ] **Long Text:** Verify long help text wraps properly
-- [ ] **Special Characters:** Test that €, %, × symbols display correctly
+- [ ] **Special Characters:** Test that $, %, × symbols display correctly
 - [ ] **Concurrent Tooltips:** Verify only one tooltip shows at a time
 - [ ] **Keyboard Navigation:** Tab through fields, verify help text accessible
 - [ ] **Screen Readers:** Test with screen reader software

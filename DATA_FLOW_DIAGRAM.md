@@ -131,9 +131,9 @@ Visual guide showing how statistics flow through the FAIR Monte Carlo tool.
 │                                                                 │
 │  📊 Visual Dashboard                                            │
 │  ┌─────────────────────────────────────────┐                   │
-│  │ Mean ALE: €618,000                      │                   │
-│  │ Median:   €554,000                      │                   │
-│  │ 95th %:   €1,340,000                    │                   │
+│  │ Mean ALE: $618,000                      │                   │
+│  │ Median:   $554,000                      │                   │
+│  │ 95th %:   $1,340,000                    │                   │
 │  │ LEF:      7.7 events/year               │                   │
 │  │                                         │                   │
 │  │ [Interactive Charts]                    │                   │
@@ -194,11 +194,11 @@ Verizon DBIR 2024      →    fair_dashboard.py          →    User adjusts
 DATA SOURCE                  LOCATION IN CODE                USE
 ─────────────────────────────────────────────────────────────────
 IBM Breach Report      →    fair_dashboard.py          →    User sees
-"€20k-350k range"            load_preset()                  preset values
+"$20k-350k range"            load_preset()                  preset values
                              lines 105-107
                              
 Coalition Claims       →    FAIRDistribution()         →    Lognormal
-"Most ~€75k"                 creates lognormal dist         distribution
+"Most ~$75k"                 creates lognormal dist         distribution
                              
                        →    Sampled per event          →    Total loss
                              in Monte Carlo                 calculated
@@ -395,7 +395,7 @@ Example code              fair_monte_carlo.py      360-400
 7. DISPLAYED AS
    ↓
    "Expected 7.7 loss events per year"
-   "Mean ALE: €618,000"
+   "Mean ALE: $618,000"
 ```
 
 ## 🎓 Understanding the Flow

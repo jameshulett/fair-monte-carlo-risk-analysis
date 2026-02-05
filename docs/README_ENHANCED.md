@@ -339,13 +339,13 @@ streamlit run fair_dashboard.py
 ```python
 # Original
 annual_revenue = st.number_input(
-    "Annual Revenue (€)",
+    "Annual Revenue ($)",
     help="Total annual revenue of the organization..."
 )
 
 # Customized for your organization
 annual_revenue = st.number_input(
-    "Annual Revenue (€)",
+    "Annual Revenue ($)",
     help="Use fiscal year revenue from Finance team. Include all subsidiaries."
 )
 ```
